@@ -170,6 +170,8 @@ exclude:
   - package.json
   - tmp
   - vendor
+  # only exclude to try to enable mmistakes skins
+  - assets 
 keep_files:
   - .git
   - .svn
@@ -290,6 +292,10 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
+  # next 3 lines: trying to make different mmistakes themes work
+  - jekyll-remote-theme
+  remote_theme : "mmistakes/minimal-mistakes"
+  minimal_mistakes_skin : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
