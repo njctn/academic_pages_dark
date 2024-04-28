@@ -16,9 +16,6 @@ url                      : https://academicpages.github.io # the base hostname &
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 
-remote_theme : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
@@ -173,8 +170,6 @@ exclude:
   - package.json
   - tmp
   - vendor
-  # only exclude to try to enable mmistakes skins
-  - assets 
 keep_files:
   - .git
   - .svn
@@ -295,8 +290,6 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
-  # trying to make different mmistakes skins work
-  - jekyll-remote-theme
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
